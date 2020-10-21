@@ -11,7 +11,8 @@ html {
     color: #555;
 }
 
-ul, nav {
+ul,
+nav {
     list-style: none;
 }
 
@@ -34,7 +35,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 150px 80px;
+    padding: 100px 80px;
 }
 
 section:not(.hero):nth-child(even) {
@@ -71,39 +72,15 @@ section p {
     text-align: center;
 }
 
-@media (max-width: 800px) {
-    section {
-        padding: 200px 20px;
-    }
-}
-
 a:hover {
     opacity: 1;
 }
 
 /* Header Styles */
 
-.zimfit {
-    width: 200px;
-	padding-top: 25px;
-}
-
-header {
-	background-color: #f5f5f5;
-	color
-}
-
-nav .nav-links a {
-	color: #000;
-}
-
-.burger div.line1,
-.burger div.line2,
-.burger div.line3 {
-	background-color: #000;
-}
-/* header li a {
-	color: #fff
+#zimfit {
+    width: 175px;
+    height: 100px;
 }
 header {
     position: absolute;
@@ -114,8 +91,8 @@ header {
     padding: 35px 100px 0;
     animation: 1s fadein 0.5s forwards;
     opacity: 0;
-    color: #fff
-} */
+    color: #fff;
+}
 
 @keyframes fadein {
     100% {
@@ -123,7 +100,7 @@ header {
     }
 }
 
-/* header h2 {
+header h2 {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -134,17 +111,6 @@ header nav {
 
 header nav li {
     margin: 0 15px;
-} */
-
-@media (max-width: 800px) {
-    header {
-        padding: 10px 20px;
-        flex-direction: column;
-    }
-
-    header h2 {
-        margin-bottom: 15px;
-    }
 }
 
 /* Hero Styles */
@@ -162,10 +128,8 @@ header nav li {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
     z-index: -1;
     background-color: #80db8b;
 }
@@ -197,62 +161,19 @@ header nav li {
     }
 }
 
-@media (max-width: 800px) {
-    .hero {
-        min-height: 600px;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-    }
-
-    .hero h3 {
-        font-size: 24px;
-    }
-	.hero a.btn {
-        padding: 15px 40px;
-    }
-}
-
 /* Services Section */
 
 .services .grid li {
     height: 350px;
     padding: 20px;
-    flex-basis: 50%;
-	line-height: 2;
     background-clip: content-box;
     background-size: cover;
     background-position: center;
-    border-radius: 50px;
 }
 
 .services .grid li.small {
     flex-basis: 50%;
 } 
-
-.services .grid h5 {
-	font-size: 25px;	
-}
-
-.services .grid p {
-	width: 400px;
-	height: 400px;
-}
-
-@media (max-width: 1100px) {
-    .services .grid li.small,
-    .services .grid li.large {
-        flex-basis: 50%;
-    }
-}
-
-@media (max-width: 800px) {
-    .services .grid li.small,
-    .services .grid li.large {
-        flex-basis: 100%;
-    }
-}
 
 /* Packages Section */
 
@@ -267,54 +188,12 @@ header nav li {
     margin: 25px 0;
 }
 
-@media (max-width: 800px) {
-    .packages .grid li {
-        flex-basis: 100%;
-        padding: 20px;
-    }
-}
 /* Contact Section */
 
 .contact p i{
     color: #05a127
 }
 
-@media (max-width: 1000px) {
-    .contact form input {
-        flex-basis: 100%;
-        margin: 0 0 20px 0;
-    }
-}
-
-/* Brands Section */
-
-.brands ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.tyrelogos {
-	height: 150px;
-	width: 425px;
-	padding: 15px;
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
-}
-
-.tyrelogos#durun {
-	height: 275px;
-}
-
-.batterylogos {
-	height: 220px;
-	width: 425px;
-	padding: 15px;
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
-}
 
 /* Footer Section */
 
@@ -342,62 +221,19 @@ footer p {
     align-self: center;
 }
 
-.tagline {
-	font-family: Brush Script MT;
-	text-transform: capitalize;
-	letter-spacing: 2px;
-	font-size: 36px;
+/* Brands Section */
+
+.brands ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-@media (max-width: 1100px) {
-    footer {
-        flex-direction: column;
-    }
-
-    footer p {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    footer ul li {
-        margin: 0 8px;
-    }
-}
-
-/*  Product Section */
-
-.products .grid li {
-	/* width: 30%; */
-	padding: 20px;
-	text-align: center;
-}
-
-.products .grid li:hover {
-	border: 1px solid rgba(0,0,0,.2);
-}
-
-.products .grid li img{
-	width: 150px;
-	height: 200px;
-	margin: 15px;
-}
-
-.products .grid .battery {
-	width: 225px;
-}
-img.tyrelogos
-
-@media max-width(800px) {
-	.product-items{
-		flex-direction: column;
-		align-items: center;
-	}
-	.product-items {
-		width: 80%
-	}
-}
-
-div.logos img {
-	padding-top: 450px;
-	width: 200px;
+.logos {
+	height: 150px;
+	width: 425px;
+	padding: 15px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
 }

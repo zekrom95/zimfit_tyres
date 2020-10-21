@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+	background-repeat: no-repeat;
+    z-index: -1;
+    background-color: #80db8b;
+}
+div h3 {
+	text-align: center;
+	position: absolute;
+	margin-top: 30px;
+	left: 28%;
+	bottom: 0;
+	color: #fff;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 30px;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+.social-icons {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	list-style: none;
+}
+
+.social-icons li {
+	opacity: 0.7;
+}
+.social-icons li:hover {
+	opacity: 1;
+}
+.social-icons li i.fab {
+	justify-content: end;
+	color: green;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+.zimfit {
+    width: 200px;
+	padding-top: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    font-family: 'Poppins', sans-serif;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+}
+
+.nav-links {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+	.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    z-index: -1;
+    background-color: #80db8b;
+	}
+	
+	div h3 {
+		position: block;
+		top: 25%;
+		left: 10%;
+	}
+	
+	.social-icons {
+		top: 30%;
+	}
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
