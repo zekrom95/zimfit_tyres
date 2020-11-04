@@ -37,10 +37,6 @@ section {
     padding: 150px 80px;
 }
 
-/* section:not(.hero):nth-child(even) {
-    background-color: #f5f5f5;
-} */
-
 .grid {
     width: 100%;
     display: flex;
@@ -53,13 +49,14 @@ hr {
     height: 3px;
     background-color: #078a2e;
     border: 0;
-	margin-top: 80px;
+	margin-top: 40px;
 	margin-bottom: 80px;
 }
 
 section h3.title {
     text-transform: capitalize;
     font: bold 32px "Roboto", sans-serif;
+	margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -89,10 +86,6 @@ a:hover {
 	padding-top: 25px;
 }
 
-/* header {
-	background-color: #f5f5f5;
-} */
-
 nav .nav-links a {
 	color: #000;
 }
@@ -102,39 +95,12 @@ nav .nav-links a {
 .burger div.line3 {
 	background-color: #000;
 }
-/* header li a {
-	color: #fff
-}
-header {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 35px 100px 0;
-    animation: 1s fadein 0.5s forwards;
-    opacity: 0;
-    color: #fff
-} */
 
 @keyframes fadein {
     100% {
         opacity: 1;
     }
 }
-
-/* header h2 {
-    font-family: 'Nanum Gothic', sans-serif;
-}
-
-header nav {
-    display: flex;
-    margin-right: -15px;
-}
-
-header nav li {
-    margin: 0 15px;
-} */
 
 @media (max-width: 800px) {
     header {
@@ -488,6 +454,34 @@ footer p {
 }
 
 .tyre-display .info p {
+	margin: 0;
+	text-align: left;
+}
+
+.battery-display {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.battery-display .info {
+	flex-basis: 30%;
+	align-self: center;
+	margin: 10px 50px;
+	
+}
+
+.battery-display .info:hover {
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+.battery-display .info img {
+	padding-top:10px;
+	height: 190px;
+	width: 170px;
+}
+
+.battery-display .info p {
 	margin: 0;
 	text-align: left;
 }
