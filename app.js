@@ -14,11 +14,15 @@ app.get("/home", function(req, res) {
 
 app.get("/products", function (req, res) {
 	res.render("products");
-})
+});
 
 app.get("/services", function (req, res) {
 	res.render("services");
-})
+});
+
+app.get("/contact", function (req, res) {
+	res.render("contact");
+});
 
 var port = process.env.PORT || 3000;
 app.listen(port, () => {

@@ -14,12 +14,39 @@
     z-index: -1;
     background-color: #80db8b;
 }
+.brand-logos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(211, 211, 211, 0.4);
+	margin-top: 160px;
+}
+
+.brand-logos .dunlop {
+	height: 120px;
+	width: 270px;
+}
+
+.brand-logos .bridgestone {
+	height: 70px;
+	width: 270px;
+}
+
+.brand-logos .continental {
+	height: 80px;
+	width: 260px;
+}
+
+/* .hero .brand-logos img{
+	height: 125px;
+	width: 300px;
+} */
 div h3 {
 	text-align: center;
-	position: absolute;
-	margin-top: 30px;
+	/* position: absolute; */
+	padding-top: 280px;
 	left: 28%;
-	bottom: 0;
+	/* bottom: 0; */
 	color: #fff;
 	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 30px;
@@ -53,13 +80,14 @@ div h3 {
 				 0px 18px 23px rgba(0,0,0,0.1);
 }
 .zimfit {
-    width: 200px;
+    width: 230px;
 	padding-top: 25px;
+	padding-left: 60px;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 8vh;
     font-family: 'Poppins', sans-serif;
@@ -69,7 +97,7 @@ nav {
 
 .nav-links {
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: space-around;
     list-style: none;
 }
