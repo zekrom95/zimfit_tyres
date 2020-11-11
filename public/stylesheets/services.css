@@ -1,0 +1,113 @@
+h1 {
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #228D22;
+	font-size: 52px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding: 20px 0;
+	margin: 50px;
+	margin-left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.services .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.services .container .content h4 {
+	padding-left: 20px;
+	font-size: 28px;
+	color: #228D22;
+	margin-bottom: 20px;
+}
+.services .container .content p {
+	text-align: left;
+}
+
+.services .container div {
+	width: 50%;
+	text-align: left;
+	margin: 0 20px;
+}
+
+.services .container div img {
+	width: 100%;
+}
+
+.services .other-services {
+	display: flex;
+	justify-content: space-around;
+	align-items: start;
+}
+
+.services .other-services div {
+	flex-basis: 20%;
+}
+.services .other-services .service-pics {
+	width: 250px;
+}
+
+.services div h2 {
+	padding-bottom: 40px;
+	color: #228D22;
+}
+
+.services .other-services div img {
+	border-radius: 15px;
+}
+.services .other-services div h4 {
+	font-size: 24px;
+	font-weight: normal;
+	color: #128D12;
+}
+
+.services .other-services div p {
+	text-align: left;
+	padding-left: 0;
+}
+
+.services .other-services div:hover {
+	opacity: 0.7;
+}
+
+.services .grid li {
+    height: 350px;
+    padding: 20px;
+    flex-basis: 50%;
+	line-height: 2;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.services .grid li.small {
+    flex-basis: 50%;
+} 
+
+.services .grid h5 {
+	font-size: 25px;	
+}
+
+.services .grid p {
+	width: 400px;
+	height: 400px;
+}
+
+@media (max-width: 1100px) {
+    .services .grid li.small,
+    .services .grid li.large {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .services .grid li.small,
+    .services .grid li.large {
+        flex-basis: 100%;
+    }
+}
