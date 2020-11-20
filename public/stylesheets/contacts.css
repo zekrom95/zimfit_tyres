@@ -13,6 +13,25 @@
 }
 
 .contact .container div p {
-	padding: 0;
+	padding: 20px 0;
 	text-align: left;
+	line-height: 2.5;
+}
+
+@media screen and (max-width: 800px) {
+	.contact .container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: space-between;
+	}
+	
+	.contact .container div p {
+		padding: 30px 0;
+		text-align: center;
+		line-height: 2.5;
+	}
+	
+	.contact .container div {
+		padding: 20px;
+	}
 }

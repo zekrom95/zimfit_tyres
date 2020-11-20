@@ -1,11 +1,13 @@
 h1 {
+	background-image: url("https://i.imgur.com/Ob2gpXX.jpg");
+	background-position: center;
+	background-size: cover;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #228D22;
-	font-size: 52px;
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
-	padding: 20px 0;
+	font-size: 60px;
+	/* border-top: 3px solid black;
+	border-bottom: 3px solid black; */
+	padding: 50px 0;
 	margin: 50px;
 	margin-left: 0;
 	width: 100%;
@@ -105,9 +107,37 @@ h1 {
     }
 }
 
-@media (max-width: 800px) {
-    .services .grid li.small,
-    .services .grid li.large {
-        flex-basis: 100%;
-    }
+@media screen and (max-width: 800px) {
+	h1 {
+		padding: 20px 0;
+	}
+	.services .container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: space-between;
+	}
+	
+	.services .container div {
+		width: 100%;
+	}
+	
+	.services .container div img {
+		margin-bottom: 30px;
+	}
+	
+	.services .other-services {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	
+	.services .other-services div {
+		padding: 30px 0;
+		flex-basis: 80%;
+	}
+	
+	.services div h2 {
+		text-align: center;
+	}
 }
