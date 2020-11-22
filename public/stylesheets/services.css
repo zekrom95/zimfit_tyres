@@ -1,15 +1,17 @@
-h1 {
+#heading {
 	background-image: url("https://i.imgur.com/Ob2gpXX.jpg");
 	background-position: center;
 	background-size: cover;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 60px;
-	/* border-top: 3px solid black;
-	border-bottom: 3px solid black; */
 	padding: 50px 0;
-	margin: 50px;
-	margin-left: 0;
+	margin: 50px 0;
+}
+
+h1 {
+	background-color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	color: #000;
+	font-size: 60px;
+	font-style: italic;
 	width: 100%;
 	text-align: center;
 }
